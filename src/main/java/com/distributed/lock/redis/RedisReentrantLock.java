@@ -58,6 +58,7 @@ public class RedisReentrantLock implements DistributedReentrantLock {
             LockData newLockData = new LockData(currentThread, lockVal);
             threadData.put(currentThread, newLockData);
             return true;
+
         }
         return false;
     }
